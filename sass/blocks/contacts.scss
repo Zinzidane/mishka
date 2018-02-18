@@ -56,9 +56,69 @@
   margin: 0;
   margin-bottom: 40px;
   background: url("../img/map-mobile@1x.jpg") no-repeat;
+  background-size: cover;
   height: 457px;
 }
 
 .contacts__btn {
   @include btn(81.25%, 52px, #fff, #000);
+}
+
+@media #{$tablet-widths} {
+  .contacts {
+    border-top: 10px solid grey;
+    border-image: url("../img/bg-zigzag-line.svg") 10 100 repeat;
+    border-image-slice: 25;
+  }
+
+  .contacts__wrapper {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .contacts__title {
+    width: 100%;
+		font-size: 43px;
+    line-height: 50px;
+    position: relative;
+
+    &::after {
+      content: "";
+      position: absolute;
+      top: 0;
+      right: 0;
+      width: 47px;
+      height: 82px;
+      background: url("../img/icons/icon-flag.svg") no-repeat;
+    }
+  }
+
+  .contacts__email {
+    width: 45%;
+  }
+
+  .contacts__email-link {
+    height: 26px;
+  }
+
+  .contacts__address {
+    width: 45%;
+
+    span {
+
+      &:nth-child(2) {
+        width: 200px;
+      }
+    }
+  }
+
+  .contacts__map {
+    background-image: url("../img/map-tablet@1x.jpg");
+    height: 457px;
+  }
+
+  .contacts__btn {
+    width: 250px;
+    margin: 0 auto;
+  }
 }

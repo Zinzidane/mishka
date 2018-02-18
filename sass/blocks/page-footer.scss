@@ -51,3 +51,23 @@
     }
   }
 }
+
+@media #{$tablet-widths} {
+  .page-footer__wrapper {
+    padding: 15px 0;
+    flex-direction: row;
+  }
+
+  .page-footer__logo {
+    width: 33%;
+    display: block;
+  }
+
+  .page-footer__social {
+    width: 33%;
+  }
+
+  .page-footer__copyright {
+    width: 33%;
+  }
+}

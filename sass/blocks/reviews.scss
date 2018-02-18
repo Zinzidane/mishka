@@ -18,7 +18,7 @@
 	line-height: 25px;
 	font-weight: bold;
 	margin: 0;
-	margin-bottom: 30px;
+  margin-bottom: 50px;
 }
 
 .reviews__text {
@@ -63,4 +63,43 @@
 .reviews__btn {
   @include btn(100%, 52px, #fff, #000);
   margin-bottom: 30px;
+}
+
+@media #{$tablet-widths} {
+  .reviews {
+    border-bottom: none;
+    background: url("../img/review@1x.jpg") left top no-repeat;
+    margin-bottom: 50px;
+  }
+
+  .reviews__wrapper {
+    position: relative;
+    padding: 50px 0;
+    padding-bottom: 20px;
+  }
+
+  .reviews__title {
+		font-size: 43px;
+		line-height: 50px;
+  }
+
+  .reviews__controls {
+    content: "";
+    position: absolute;
+    bottom: 45px;
+    right: 0;
+    width: 150px;
+  }
+
+  .reviews__arrow {
+    border: none;
+  }
+
+  .reviews__btn {
+    content: "";
+    position: absolute;
+    top: 45px;
+    right: 0;
+    width: 150px;
+  }
 }

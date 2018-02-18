@@ -92,3 +92,55 @@
     }
   }
 }
+
+@media #{$tablet-widths} {
+  .advantages {
+    border-top: 10px solid grey;
+    border-image: url("../img/bg-zigzag-line.svg") 10 100 repeat;
+    border-image-slice: 25;
+  }
+  
+  .advantages__wrapper {
+    padding: 45px 0;
+  }
+
+  .advantages__title {
+		font-size: 43px;
+		line-height: 50px;
+    font-weight: bold;
+    margin-bottom: 50px;
+  }
+
+  .advantages__list {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .advantages__item {
+    width: 45%;
+
+    &--ecology {
+      order: 1;
+    }
+
+    &--handmade {
+      order: 2;
+    }
+
+    &--price {
+      order: 3;
+    }
+
+    &--homeland {
+      order: 4;
+    }
+
+    &--likes {
+      order: 5;
+    }
+
+    &--package {
+      order: 6;
+    }
+  }
+}
