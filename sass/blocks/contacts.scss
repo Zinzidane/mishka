@@ -1,0 +1,64 @@
+.contacts {
+  margin: 0;
+  padding: 0;
+  padding-bottom: 40px;
+}
+
+.contacts__wrapper {
+  @include container;
+  padding-top: 40px;
+}
+
+.contacts__title {
+  font-size: 25px;
+	line-height: 25px;
+	font-weight: bold;
+	margin: 0;
+	margin-bottom: 30px;
+}
+
+.contacts__email {
+  display: flex;
+  margin: 0;
+  margin-bottom: 35px;
+  font-size: 15px;
+
+  span {
+    margin-right: 30px;
+  }
+
+  a {
+    text-decoration: none;
+    color: #000;
+    border-bottom: 1px solid $lightgreen;
+  }
+}
+
+.contacts__address {
+  display: flex;
+  margin: 0;
+  margin-bottom: 30px;
+  font-size: 15px;
+  color: #000;
+
+  span {
+    &:nth-child(1) {
+      margin-right: 30px;
+    }
+
+    &:nth-child(2) {
+      width: 150px;
+    }
+  }
+}
+
+.contacts__map {
+  margin: 0;
+  margin-bottom: 40px;
+  background: url("../img/map-mobile@1x.jpg") no-repeat;
+  height: 457px;
+}
+
+.contacts__btn {
+  @include btn(81.25%, 52px, #fff, #000);
+}

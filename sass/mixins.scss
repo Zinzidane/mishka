@@ -1,0 +1,64 @@
+@mixin btn($width, $height, $bgcolor, $color) {
+  display: block;
+  margin: 0 auto;
+  padding: 14px 0;
+  font-family: $font-family;
+  width: $width;
+  height: $height;
+  font-size: 16px;
+  font-weight: bold;
+  line-height: 16px;
+  text-transform: uppercase;
+  text-align: center;
+  background-color: $bgcolor;
+  border: none;
+  border: 2px solid $color;
+  color: $color;
+  text-decoration: none;
+  transition: all 0.3s ease;
+}
+
+@mixin title {
+	margin: 0;
+	font-family: Verdana, Arial, sans-serif;
+	font-size: 24px;
+	font-weight: bold;
+	line-height: 30px;
+
+	@media #{$tablet-widths} {
+		font-size: 40px;
+		line-height: 50px;
+	}
+
+	@media #{$desktop-widths} {
+		font-size: 50px;
+		line-height: 57px;
+	}
+}
+
+@mixin visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+@mixin container {
+  width: 81.25%;
+  margin: 0 auto;
+
+  @media #{$tablet-widths} {
+    width: 92%;
+    max-width: 1000px;
+  }
+
+  @media #{$desktop-widths} {
+    width: 85%;
+    min-width: 1150px;
+    max-width: 1300px;
+  }
+}

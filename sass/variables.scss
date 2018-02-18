@@ -1,0 +1,29 @@
+@font-face {
+	font-family: "OpenSans";
+	src:
+	url("../fonts/opensans.woff") format("woff"),
+	url("../fonts/opensans.woff2") format("woff2");
+	font-weight: normal;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: "OpenSans";
+	src:
+	url("../fonts/opensansbold.woff") format("woff"),
+	url("../fonts/opensansbold.woff2") format("woff2");
+	font-weight: bold;
+	font-style: normal;
+}
+
+$font-family: "OpenSans", Arial, sans-serif;
+
+$tablet-widths: "(min-width: 768px)";
+$desktop-widths: "(min-width: 1150px)";
+
+$lightgrey: #f1f1f1;
+$grey: #ececec;
+$darkgrey: #e5e5e5;
+$lightgreen: #63d1bb;
+$green: #56c3b2;
+$darkgreen: #149080;
