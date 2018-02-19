@@ -122,3 +122,60 @@
     margin: 0 auto;
   }
 }
+
+@media #{$desktop-widths} {
+  .contacts {
+    @include container;
+    position: relative;
+    border-top: 20px solid grey;
+    border-image: url("../img/bg-zigzag-line.svg") 20 100 repeat;
+    border-image-slice: 25;
+    padding: 65px 0;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-start;
+  }
+
+  .contacts__wrapper {
+    width: 50%;
+    padding-top: 40px;
+  }
+
+  .contacts__title {
+    font-size: 53px;
+    line-height: 60px;
+    padding-left: 175px;
+    padding-top: 20px;
+    margin-bottom: 50px;
+
+    &::after {
+      left: 4%;
+      right: auto;
+    }
+  }
+
+  .contacts__email {
+    display: block;
+    padding-left: 175px;
+    width: 100%;
+    margin-bottom: 30px;
+  }
+
+  .contacts__address {
+    display: block;
+    padding-left: 175px;
+    width: 100%;
+  }
+
+  .contacts__map {
+    width: 50%;
+    background-image: url("../img/map-desktop@1x.jpg");
+  }
+
+  .contacts__btn {
+    content: "";
+    position: absolute;
+    bottom: 105px;
+    left: 175px;
+  }
+}

@@ -103,3 +103,14 @@
     width: 150px;
   }
 }
+
+@media #{$desktop-widths} {
+  .reviews__wrapper {
+    padding: 70px 0;
+  }
+
+  .reviews__title {
+    font-size: 53px;
+    line-height: 60px;
+  }
+}

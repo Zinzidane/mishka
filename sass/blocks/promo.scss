@@ -20,6 +20,10 @@
 	display: none;
 }
 
+.promo__links {
+	display: none;
+}
+
 .promo__list {
 	margin: 0;
 	padding: 0;
@@ -66,6 +70,7 @@
 	.promo {
 		position: relative;
 		background: url("../img/hero-tablet@1x.jpg") top center no-repeat;
+		background-size: cover;
 	}
 
 	.promo__wrapper {
@@ -99,5 +104,42 @@
 
 	.promo__item {
 		flex-grow: 1;
+	}
+}
+
+@media #{$desktop-widths} {
+	.promo {
+		background: url("../img/hero-desktop@1x.jpg") top center no-repeat;
+		background-size: cover;
+	}
+
+	.promo__links {
+		position: absolute;
+		margin: 0;
+		padding: 0;
+		top: 0;
+		left: 8.7%;
+		display: flex;
+		list-style: none;
+	}
+
+	.promo__link {
+		margin: 0;
+		padding: 20px 0;
+		margin-right: 59px;
+
+
+		a {
+			text-decoration: none;
+			color: #000;
+			font-size: 15px;
+			font-weight: bold;
+		}
+	}
+
+	.promo__title {
+		width: 700px;
+		font-size: 53px;
+		line-height: 60px;
 	}
 }

@@ -144,3 +144,26 @@
     }
   }
 }
+
+@media #{$desktop-widths} {
+  .advantages {
+    border: none;
+  }
+
+  .advantages__wrapper {
+    border-top: 20px solid grey;
+    border-image: url("../img/bg-zigzag-line.svg") 20 100 repeat;
+    border-image-slice: 25;
+    padding: 65px 0;
+  }
+
+  .advantages__title {
+    font-size: 53px;
+    line-height: 60px;
+  }
+
+  .advantages__item {
+    max-width: 300px;
+    margin-right: 175px;
+  }
+}
