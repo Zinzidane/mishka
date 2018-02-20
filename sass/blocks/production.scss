@@ -1,0 +1,136 @@
+.production {
+  margin: 0;
+  padding: 0;
+}
+
+.production__wrapper {
+  @include container;
+  margin-bottom: 56px;
+  padding: 31px 0;
+  padding-top: 25px;
+  border: 1px solid $grey;
+}
+
+.production__title {
+  position: relative;
+  margin: 0 33px;
+  margin-bottom: 22px;
+  padding-left: 64px;
+  font-size: 17px;
+  font-weight: bold;
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: 8px;
+    left: 0;
+    width: 32px;
+    height: 22px;
+    background: url("../img/icons/icon-video.svg") center no-repeat;
+  }
+}
+
+.production__video {
+  margin: 0;
+  margin-bottom: 18px;
+  position: relative;
+  width: 100%;
+
+  img {
+    width: 100%;
+    height: 100%;
+  }
+}
+
+.production__play-btn {
+  content: "";
+  position: absolute;
+  cursor: pointer;
+  font-size: 0;
+  top: 50%;
+  left: 50%;
+  width: 102px;
+  height: 78px;
+  transform: translate(-50%, -50%);
+  background: url("../img/icons/icon-play.svg") center no-repeat;
+}
+
+.production__description {
+  margin: 0 33px;
+
+  p {
+    margin: 0;
+    font-size: 13px;
+    margin-bottom: 25px;
+  }
+
+  a {
+    @include btn(100%, 52px, #fff, #000);
+  }
+}
+
+@media #{$tablet-widths} {
+  .production__wrapper {
+    position: relative;
+    padding-top: 0;
+  }
+
+  .production__title {
+    position: absolute;
+    margin: 0 40px;
+    top: 515px;
+    left: 0;
+    font-size: 20px;
+
+    &::before {
+      top: 0;
+    }
+  }
+
+  .production__video {
+    margin-bottom: 100px;
+  }
+
+  .production__description {
+    margin: 0 40px;
+
+    p {
+      font-size: 15px;
+      margin-bottom: 33px;
+    }
+  }
+}
+
+@media #{$desktop-widths} {
+  .production__wrapper {
+    display: flex;
+    padding-bottom: 0;
+    margin-bottom: 105px;
+  }
+
+  .production__video {
+    width: 67%;
+    margin-bottom: 0;
+  }
+
+  .production__title {
+    width: 23%;
+    margin: 0;
+    padding-left: 0;
+    padding-top: 65px;
+    top: 43px;
+    right: 55px;
+    left: auto;
+
+    &::before {
+      top: 0;
+    }
+  }
+
+  .production__description {
+    width: 23%;
+    margin-left: 80px;
+    margin-right: 55px;
+    margin-top: 180px;
+  }
+}
