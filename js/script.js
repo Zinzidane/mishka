@@ -10,7 +10,7 @@ function initMap() {
   var marker = new google.maps.Marker({
     position: uluru,
     map: map,
-    title: 'zinzidane.github.io/cat-energy',
+    title: 'zinzidane.github.io/mishka',
     icon: {
       url: "img//icons/icon-map-pin.svg",
       scaledSize: new google.maps.Size(124, 106)
@@ -35,3 +35,5 @@ navToggler.addEventListener("click", function () {
   }
 });
 
+
+// Иконка поиска

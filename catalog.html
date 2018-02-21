@@ -37,11 +37,14 @@
 						<a href="form.html">Вязание на заказ</a>
 					</li>
 					<li class="main-nav__item  main-nav__item--search">
-						<a href="#">
-							<svg class="main-nav__icon-search" width="18" height="14" aria-hidden="true">
-								<use xlink:href="#icon-search" href="#icon-search" />
-							</svg> Поиск по сайту
-						</a>
+						<form class="main-nav__search">
+						  <input class="main-nav__input" type="search" placeholder="Поиск по сайту">
+						  <button class="main-nav__search-btn" type="submit">					      	
+						  	<svg class="main-nav__icon-search" width="18" height="14" aria-hidden="true">
+									<use xlink:href="#icon-search" href="#icon-search" />
+								</svg>
+							</button>
+						</form>
 					</li>
 					<li class="main-nav__item  main-nav__item--cart">
 						<a href="#">
@@ -211,6 +214,9 @@
 		</div>
 	</footer>
 	<script src="js/bundle.min.js"></script>
+	<script async defer
+  src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCmzGfxKrN6n0gaJtCyE_aaSqcjjvMReLg&callback=initMap">
+  </script>
 </body>
 
 </html>
