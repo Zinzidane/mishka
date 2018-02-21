@@ -32,12 +32,15 @@
     transition: all .3s ease;
 
     &[href]:hover {
-      opacity: 0.8;
+      opacity: 0.6;
       transition: all .3s ease;
+
+
     }
 
     &[href]:active {
-      opacity: 0.6;
+      opacity: 0.3;
+      transition: all .3s ease;
     }
 }
 
@@ -99,10 +102,19 @@
     &:hover {
       opacity: 0.6;
       transition: all .3s ease;
+
+      svg {
+        fill: $green;
+      }
     }
 
     &:active {
       opacity: 0.3;
+
+      svg {
+        fill: $green;
+        opacity: 0.3;
+      }
     }
   }
 }

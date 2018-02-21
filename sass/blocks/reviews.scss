@@ -54,6 +54,17 @@
   border: 1px solid $grey;
   color: #000;
   background-color: #fff;
+  transition: color 0.3 ease;
+
+  &:hover {
+    opacity: 0.6;
+    transition: color 0.3 ease;
+  }
+
+  &:active {
+    opacity: 0.3;
+    transition: color 0.3 ease;
+  }
 
   &:nth-child(2) {
     border-left: none;
@@ -61,7 +72,7 @@
 }
 
 .reviews__btn {
-  @include btn(100%, 52px, #fff, #000);
+  @include btn(100%, 52px);
   margin-bottom: 30px;
 }
 

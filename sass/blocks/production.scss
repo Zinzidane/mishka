@@ -9,6 +9,17 @@
   padding: 31px 0;
   padding-top: 25px;
   border: 1px solid $grey;
+  transition: all 0.3s ease;
+
+  &:hover {
+    box-shadow: 0 6px 10px 0 rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease;
+  } 
+
+  &:active {
+    box-shadow: 0 6px 10px 0 rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease;
+  }
 }
 
 .production__title {
@@ -52,7 +63,37 @@
   width: 102px;
   height: 78px;
   transform: translate(-50%, -50%);
-  background: url("../img/icons/icon-play.svg") center no-repeat;
+  transition: size 0.3s ease;
+
+  svg {
+    width: 102px;
+    height: 78px;
+    
+  }
+
+  &:hover {
+    width: 122px;
+    height: 94px;
+    transition: size 0.3s ease;
+
+    svg {
+      width: 122px;
+      height: 94px;  
+      
+    }
+  }
+
+  &:active {
+    width: 82px;
+    height: 62px;
+    transition: size 0.3s ease;
+    opacity: 0.6;
+
+    svg {
+      width: 82px;
+      height: 62px; 
+    }
+  }
 }
 
 .production__description {
@@ -65,7 +106,7 @@
   }
 
   a {
-    @include btn(100%, 52px, #fff, #000);
+    @include btn(100%, 52px);
   }
 }
 

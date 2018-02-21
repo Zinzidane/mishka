@@ -47,23 +47,8 @@
 }
 
 .promo__item {
-  position: relative;
+	position: relative;
 	margin: 0;
-	padding: 30px 9%;
-	background-color: $lightgreen;
-
-	&--color {
-		background-color: $green;
-	}
-
-	a {
-		display: block;
-		width: 130px;
-		text-decoration: none;
-		font-size: 19px;
-		font-weight: bold;
-		color: #fff;
-	}
 }
 
 .promo__icon {
@@ -80,6 +65,59 @@
 		width: 61px;
 		height: 61px;
 	}
+}
+
+.promo__item-link {
+	position: relative;
+	display: block;
+	padding: 30px 9%;
+	width: 100%;
+	text-decoration: none;
+	font-size: 19px;
+	font-weight: bold;
+	background-color: $lightgreen;
+	color: #fff;
+	transition: all 0.3s ease;
+
+	&:hover {
+		bottom: 5px;
+		transition: all 0.3s ease;
+		background-color: $interiorlinkdown;
+	}
+
+	&:active {
+		color: #8be2d0;
+		background-color: $interiorlinkdown;
+		transition: all 0.3s ease;
+	}
+
+	&--color {
+		background-color: $green;
+
+		&:hover {
+			background-color: $toylinkdown;
+		}
+
+		&:active {
+			background-color: $toylinkdown;
+		}
+	}
+}
+
+.promo__item-link:hover+.promo__icon {
+	fill: #29a592;
+}
+
+.promo__item-link:active+.promo__icon {
+	fill: #44c0aa;
+}
+
+.promo__item-link--color:hover+.promo__icon {
+	fill: #29a592;
+}
+
+.promo__item-link--color:active+.promo__icon {
+	fill: #37b2a0;
 }
 
 @media #{$tablet-widths} {
@@ -134,6 +172,19 @@
 	.promo__list {
 		display: flex;
 		flex-direction: row;
+	}
+
+	.promo__link {
+		transition: all 0.3s ease;
+		&:hover {
+			opacity: 0.6;
+			transition: all 0.3s ease;
+		}
+
+		&:active {
+			opacity: 0.6;
+			transition: all 0.3s ease;
+		}
 	}
 
 	.promo__item {

@@ -40,9 +40,18 @@
     font-weight: bold;
     text-decoration: none;
     color: #000;
+    transition: all 0.3s ease;
+
+    &:hover {
+      transition: all 0.3s ease;
+      svg {
+        fill: $sociallinkhover;
+      }
+    }
 
     &:active {
       opacity: 0.3;
+      transition: all 0.3s ease;
     }
 
     svg {
@@ -61,6 +70,19 @@
   .page-footer__logo {
     width: 33%;
     display: block;
+    transition: all 0.3s ease;
+
+    &:hover {
+      transition: all 0.3s ease;
+      svg {
+        fill: $sociallinkhover;
+      }
+    }
+
+    &:active {
+      opacity: 0.3;
+      transition: all 0.3s ease;
+    }
   }
 
   .page-footer__social {

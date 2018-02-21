@@ -1,4 +1,23 @@
 .social-link {
   margin-right: 20px;
   font-size: 0;
+  
+  svg {
+    transition: all 0.3s ease;
+  }
+
+  &:hover {
+    transition: all 0.3s ease;
+    svg {
+      fill: $sociallinkhover;
+    }
+  }
+
+  &:active {
+    transition: all 0.3s ease;
+    opacity: 0.3;
+    svg {
+      fill: $sociallinkhover;
+    }
+  }
 }

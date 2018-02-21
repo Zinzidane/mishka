@@ -31,6 +31,20 @@
     text-decoration: none;
     color: #000;
     border-bottom: 1px solid $lightgreen;
+    transition: all 0.3s ease;
+
+    &:hover {
+      color: $lightgreen;
+      border-bottom: 1px solid $green;
+      transition: all 0.3s ease;
+    }
+
+    &:active {
+      color: $lightgreen;
+      border-bottom: 1px solid $green;
+      opacity: 0.3;
+      transition: all 0.3s ease;
+    }
   }
 }
 
@@ -61,7 +75,7 @@
 }
 
 .contacts__btn {
-  @include btn(81.25%, 52px, #fff, #000);
+  @include btn(81.25%, 52px);
 }
 
 @media #{$tablet-widths} {

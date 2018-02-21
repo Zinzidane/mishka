@@ -73,6 +73,8 @@
   line-height: 18px;
   font-weight: bold;
   text-align: left;
+  cursor: pointer;
+  transition: all 0.3s ease;
 
   &::before {
     content: "";
@@ -81,9 +83,23 @@
     left: 0;
     width: 40px;
     height: 40px;
-    border: 1px solid #000;
+    border: 2px solid #000;
     border-radius: 50%;
     background-color: #fff;
+  }
+
+  &:hover {
+    transition: all 0.3s ease;
+    &::before {
+      border: 2px solid $radiohover;
+    }
+  }
+
+  &:active {
+    transition: all 0.3s ease;
+    &::before {
+      border: 2px solid $radiodown;
+    }
   }
 }
 
@@ -111,6 +127,8 @@
   font-weight: bold;
   line-height: 18px;
   margin-bottom: 20px;
+  cursor: pointer;
+  transition: all 0.3s ease;
 
   &::before {
     content: "";
@@ -121,6 +139,20 @@
     height: 40px;
     border: 2px solid #000;
     background-color: #fff;
+  }
+
+  &:hover {
+    transition: all 0.3s ease;
+    &::before {
+      border: 2px solid $checkboxhover;
+    }
+  }
+
+  &:active {
+    transition: all 0.3s ease;
+    &::before {
+      border: 2px solid $checkboxdown;
+    }
   }
 }
 
@@ -138,6 +170,7 @@
   display: block;
   font-size: 17px;
   font-weight: bold;
+  cursor: pointer;
 
   &--phone {
     position: relative;
@@ -182,11 +215,33 @@
   border-bottom: 2px solid #000;
   font-family: $font-family;
   font-size: 17px;
+  transition: all 0.3s ease;
+
+  &:hover {
+    border-color: $inputhover;
+    outline: none;
+    transition: all 0.3s ease;
+  }
+
+  &:active {
+    border-color: $inputdown;
+    outline: none;
+    transition: all 0.3s ease;
+  }
+
+  &:focus {
+    border-color: $inputdown;
+    outline: none;
+    transition: all 0.3s ease;
+  }
 }
+
+
 
 .form__input-icon {
   content: "";
   position: absolute;
+  transition: all 0.3s ease;
 
   &--phone {
     top: 34px;
@@ -199,6 +254,21 @@
   }
 }
 
+.form__input:hover+.form__input-icon {
+  fill: $inputhover;
+  transition: all 0.3s ease;
+}
+
+.form__input:active+.form__input-icon {
+  fill: $inputdown;
+  transition: all 0.3s ease;
+}
+
+.form__input:focus+.form__input-icon {
+  fill: $inputdown;
+  transition: all 0.3s ease;
+}
+
 .form__textarea {
   width: 100%;
   padding: 15px;
@@ -206,6 +276,24 @@
   font-size: 17px;
   min-height: 142px;
   margin-bottom: 13px;
+  transition: all 0.3s ease;
+
+  &:hover {
+    border-color: $inputhover;
+    transition: all 0.3s ease;
+  }
+
+  &:active {
+    border-color: $inputdown;
+    outline: none;
+    transition: all 0.3s ease;
+  }
+
+  &:focus {
+    border-color: $inputdown;
+    outline: none;
+    transition: all 0.3s ease;
+  }
 }
 
 .form__reminder {
@@ -215,7 +303,7 @@
 }
 
 .form__btn {
-  @include btn(100%, 52px, #fff, #000);
+  @include btn(100%, 52px);
   margin-bottom: 50px;
 }
 
